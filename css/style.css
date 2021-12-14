@@ -18,7 +18,45 @@ body {
 }
 
 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
     width: 800px;
     height: 500px;
-    border: 2px #333 solid;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 30px #ccc;
+    text-align: center;
+    transition: box-shadow 1s;
+}
+
+.box:hover {
+    box-shadow: 0 0 20px #6667ab;
+}
+
+.button {
+    margin: 0 20px;
+    font-size: 35px;
+    cursor: pointer;
+    transform: scale(0.5);
+    transition: transform .5s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+
+.line {
+    border-bottom: 3px #333 solid;
+    margin: 50px 0;
+}
+
+#title {
+    font-size: 50px;
+}
+
+#text {
+    font-size: 18px;
 }
